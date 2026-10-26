@@ -1,46 +1,43 @@
-<?php require_once 'db.php'; include 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Efrem Esayas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<section class="section contact">
-    <h2 class="section-title">Contact <span>Me</span></h2>
-    <div class="contact-container">
-        
-        <div class="contact-info">
-            <div class="info-card">
-                <i class="fas fa-envelope"></i>
-                <div>
-                    <h3>Email</h3>
-                    <p>efremesayas394@gmail.com</p>
-                </div>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                    <h3>Location</h3>
-                    <p>Wolaita Sodo, Ethiopia</p>
-                </div>
-            </div>
-            <!-- Social Accounts Linked -->
-            <div class="info-card">
-                <i class="fas fa-share-alt"></i>
-                <div>
-                    <h3>Social Profiles</h3>
-                    <p>Facebook | Telegram | TikTok | Instagram</p>
-                </div>
-            </div>
+    <header class="header">
+        <a href="index.html" class="logo">Efrem.</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fas fa-bars" id="menu-icon"></i>
+            <i class="fas fa-times" id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="section contact" style="padding: 100px 9%; min-height: 80vh;">
+        <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center;">Contact <span>Me</span></h2>
+        <div class="contact-container" style="max-width: 600px; margin: 0 auto; background: #f9f9f9; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+            <p style="margin-bottom: 1rem; font-size: 1.1rem;"><i class="fas fa-envelope" style="color: #e67e22; margin-right: 10px;"></i> Email: efremesayas394@gmail.com</p>
+            <p style="margin-bottom: 1rem; font-size: 1.1rem;"><i class="fas fa-phone" style="color: #e67e22; margin-right: 10px;"></i> Location: Wolaita Sodo, Ethiopia</p>
+            <p style="margin-bottom: 1rem; font-size: 1.1rem;"><i class="fab fa-telegram" style="color: #e67e22; margin-right: 10px;"></i> Telegram: @efaesayas</p>
         </div>
+    </section>
 
-        <form id="contact-form" class="contact-form">
-            <div class="input-group">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-            </div>
-            <input type="text" name="subject" placeholder="Subject" required>
-            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-            <div id="form-response"></div>
-        </form>
-
-    </div>
-</section>
-
-<?php include 'footer.php'; ?>
+    <footer>
+        <p style="text-align: center; padding: 1rem;">&copy; 2026 Efrem Esayas. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

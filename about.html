@@ -1,23 +1,69 @@
-<?php include 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Efrem Esayas</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<section class="section about">
-    <h2 class="section-title">About <span>Me</span></h2>
-    <div class="about-container">
-        <div class="about-img">
-            <img src="images/red.jpg" alt="About Me">
-        </div>
-        <div class="about-text">
-            <h3>Passionate Networking & Systems Developer</h3>
-            <p>I am Efrem Esayas, 4<sup>th</sup> year Computer Science student at Wolaita sodo university. I am dedicated to crafting clean code, designing elegant user interfaces, and solving complex technical challenges across web development, database management systems, and hardware-software integration.</p>
-            <div class="personal-info">
-                <p><span>Degree:</span> 4<sup>th</sup> year Computer Science student</p>
-                <p><span>Location:</span> Wolaita Sodo, Ethiopia</p>
-                <p><span>Freelance:</span> Available</p>
-                <p><span>Email:</span> efremesayas394@gmail.com</p>
+    <!-- Header / Responsive Navigation Bar -->
+    <header class="header">
+        <a href="index.html" class="logo">Efrem.</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fas fa-bars" id="menu-icon"></i>
+            <i class="fas fa-times" id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="section about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="images/red.jpg" alt="About Me">
             </div>
-            <a href="contact.php" class="btn">Contact Me</a>
+            <div class="about-text">
+                <h3>Passionate Networking & Systems Developer</h3>
+                <p>I am Efrem Esayas, 4<sup>th</sup> year Computer Science student at Wolaita Sodo university. I am dedicated to crafting clean code, designing elegant user interfaces, and solving complex technical challenges across web development, database management systems, and hardware-software integration.</p>
+                <div class="personal-info">
+                    <p><span>Degree:</span> 4<sup>th</sup> year Computer Science student</p>
+                    <p><span>Location:</span> Wolaita Sodo, Ethiopia</p>
+                    <p><span>Freelance:</span> Available</p>
+                    <p><span>Email:</span> efremesayas394@gmail.com</p>
+                </div>
+                <a href="contact.html" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Social Icons Footer Section -->
+    <div class="footer-social-container" style="text-align: center; padding: 2rem 0 1rem 0;">
+        <div class="social-icons" style="display: inline-flex; justify-content: center; gap: 1.2rem; margin-bottom: 1rem;">
+            <a href="https://www.facebook.com/efy.man.1" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://t.me/efaesayas" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://tiktok.com/@efremesayas394" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/efa_esayas?xtok=OXFja219wOWt6" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:efremesayas394@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
-</section>
 
-<?php include 'footer.php'; ?>
+    <footer>
+        <p>&copy; 2026 Efrem Esayas. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

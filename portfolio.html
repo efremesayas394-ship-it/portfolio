@@ -1,70 +1,116 @@
-<?php include 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Efrem Esayas</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<section class="section">
-    <h2 class="section-title">My <span>Portfolio</span></h2>
-    <div class="portfolio-grid">
+    <!-- Header / Responsive Navigation Bar -->
+    <header class="header">
+        <a href="index.html" class="logo">Efrem.</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fas fa-bars" id="menu-icon"></i>
+            <i class="fas fa-times" id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-        <div class="portfolio-item">
-            <div class="portfolio-img-box">
-                <img src="images/red.jpg" alt="Blood Bank Management System">
+    <section class="section" style="padding: 100px 9%; min-height: 80vh;">
+        <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center;">My <span>Portfolio</span></h2>
+        <div class="portfolio-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+            <div class="portfolio-item" style="background: #f9f9f9; padding: 1.5rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                <div class="portfolio-img-box" style="overflow: hidden; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/red.jpg" alt="Blood Bank Management System" style="width: 100%; height: 200px; object-fit: cover;">
+                </div>
+                <div class="portfolio-info">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Efrem Esayas</h3>
+                    <p style="color: #666;">I am passionate with web development</p>
+                </div>
             </div>
-            <div class="portfolio-info">
-                <h3>Efrem Esayas</h3>
-                <p>I am passionate with web development</p>
+
+            <div class="portfolio-item" style="background: #f9f9f9; padding: 1.5rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                <div class="portfolio-img-box" style="overflow: hidden; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/dadmom.jpg" alt="3D Solar System Simulation" style="width: 100%; height: 200px; object-fit: cover;">
+                </div>
+                <div class="portfolio-info">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">My Dad an My Mom</h3>
+                    <p style="color: #666;">❤️🥰</p>
+                </div>
             </div>
+
+            <div class="portfolio-item" style="background: #f9f9f9; padding: 1.5rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                <div class="portfolio-img-box" style="overflow: hidden; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/mommy.jpg" alt="E-Commerce & Inventory" style="width: 100%; height: 200px; object-fit: cover;">
+                </div>
+                <div class="portfolio-info">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Mommy</h3>
+                    <p style="color: #666;">I love too my mom. She is strong mom always❤️🥰</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" style="background: #f9f9f9; padding: 1.5rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                <div class="portfolio-img-box" style="overflow: hidden; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/china.jpg" alt="Hardware Soft-Starter" style="width: 100%; height: 200px; object-fit: cover;">
+                </div>
+                <div class="portfolio-info">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Frined</h3>
+                    <p style="color: #666;">He is 3rd year political science and international relation student at Bule Hora University</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" style="background: #f9f9f9; padding: 1.5rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                <div class="portfolio-img-box" style="overflow: hidden; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/anka.jpg" alt="Network Architecture" style="width: 100%; height: 200px; object-fit: cover;">
+                </div>
+                <div class="portfolio-info">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Music</h3>
+                    <p style="color: #666;">Anka Gospel Ceremony</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" style="background: #f9f9f9; padding: 1.5rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                <div class="portfolio-img-box" style="overflow: hidden; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/bongota.jpg" alt="AI Chatbot & Tools" style="width: 100%; height: 200px; object-fit: cover;">
+                </div>
+                <div class="portfolio-info">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Church</h3>
+                    <p style="color: #666;">I am Bitena town Kale Hiwet Church music player</p>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-        <div class="portfolio-item">
-            <div class="portfolio-img-box">
-                <img src="images/dadmom.jpg" alt="3D Solar System Simulation">
-            </div>
-            <div class="portfolio-info">
-                <h3>My Dad an My Mom</h3>
-                <p>❤️🥰</p>
-            </div>
+    <!-- Global Social Icons Footer Section -->
+    <div class="footer-social-container" style="text-align: center; padding: 2rem 0 1rem 0;">
+        <div class="social-icons" style="display: inline-flex; justify-content: center; gap: 1.2rem; margin-bottom: 1rem;">
+            <a href="https://www.facebook.com/efy.man.1" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://t.me/efaesayas" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://tiktok.com/@efremesayas394" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/efa_esayas?xtok=OXFja219wOWt6" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:efremesayas394@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
         </div>
-
-        <div class="portfolio-item">
-            <div class="portfolio-img-box">
-                <img src="images/mommy.jpg" alt="E-Commerce & Inventory">
-            </div>
-            <div class="portfolio-info">
-                <h3>Mommy</h3>
-                <p>I love too my mom. She is strong mom always❤️🥰</p>
-            </div>
-        </div>
-
-        <div class="portfolio-item">
-            <div class="portfolio-img-box">
-                <img src="images/china.jpg" alt="Hardware Soft-Starter">
-            </div>
-            <div class="portfolio-info">
-                <h3>Frined</h3>
-                <p>He is 3rd year political science and international relation student at Bule Hora University</p>
-            </div>
-        </div>
-
-        <div class="portfolio-item">
-            <div class="portfolio-img-box">
-                <img src="images/anka.jpg" alt="Network Architecture">
-            </div>
-            <div class="portfolio-info">
-                <h3>Music</h3>
-                <p>Anka Gospel Ceremony</p>
-            </div>
-        </div>
-
-        <div class="portfolio-item">
-            <div class="portfolio-img-box">
-                <img src="images/bongota.jpg" alt="AI Chatbot & Tools">
-            </div>
-            <div class="portfolio-info">
-                <h3>Church</h3>
-                <p>I am Bitena town Kale Hiwet Church music player</p>
-            </div>
-        </div>
-
     </div>
-</section>
 
-<?php include 'footer.php'; ?>
+    <footer>
+        <p style="text-align: center; padding: 1rem; color: #666;">&copy; 2026 Efrem Esayas. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

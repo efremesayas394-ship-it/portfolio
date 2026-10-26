@@ -58,7 +58,11 @@
                 </div>
             </div>
 
-            <form id="contact-form" class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="contact-form">
+                
+                <!-- እዚህ ጋር YOUR_ACCESS_KEY_HERE የሚለውን አጥፍተው ከጂሜይልዎ ያገኙትን ትክክለኛ Key ያስገቡ -->
+                <input type="hidden" name="access_key" value="71fb647e-dd7a-478f-93b8-2b694ef2d99e">
+
                 <div class="input-group">
                     <input type="text" name="name" placeholder="Full Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>

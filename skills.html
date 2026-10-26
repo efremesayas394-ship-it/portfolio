@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Efrem Esayas</title>
+    <title>Skills | Efrem Esayas</title>
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Header / Responsive Navigation Bar -->
     <header class="header">
         <a href="index.html" class="logo">Efrem.</a>
         <input type="checkbox" id="check">
@@ -19,51 +22,37 @@
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
+            <a href="skills.html" class="active">Skills</a>
             <a href="education.html">Education</a>
             <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html" class="active">Contact</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <section class="section contact">
-        <h2 class="section-title">Contact <span>Me</span></h2>
-        <div class="contact-container">
+    <section class="section skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-container">
             
-            <div class="contact-info">
-                <div class="info-card">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h3>Email</h3>
-                        <p>efremesayas394@gmail.com</p>
-                    </div>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h3>Location</h3>
-                        <p>Wolaita Sodo, Ethiopia</p>
-                    </div>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-share-alt"></i>
-                    <div>
-                        <h3>Social Profiles</h3>
-                        <p>Facebook | Telegram | TikTok | Instagram</p>
-                    </div>
+            <div class="skill-category">
+                <h3>Technical Competencies</h3>
+                
+                <div class="skill-tag-list">
+                    <div class="skill-tag"><i class="fas fa-check-circle"></i> HTML5 & CSS3</div>
+                    <div class="skill-tag"><i class="fas fa-check-circle"></i> JavaScript (ES6+)</div>
+                    <div class="skill-tag"><i class="fas fa-check-circle"></i> PHP & Laravel Framework</div>
+                    <div class="skill-tag"><i class="fas fa-check-circle"></i> MySQL / Database Systems</div>
                 </div>
             </div>
 
-            <form id="contact-form" class="contact-form" action="#" method="POST">
-                <div class="input-group">
-                    <input type="text" name="name" placeholder="Full Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+                    <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
+                    <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
+                    <div class="skill-card"><i class="fab fa-figma"></i><span>UI/UX Design</span></div>
                 </div>
-                <input type="text" name="subject" placeholder="Subject" required>
-                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-                <div id="form-response"></div>
-            </form>
+            </div>
 
         </div>
     </section>
@@ -80,8 +69,9 @@
     </div>
 
     <footer>
-        <p style="text-align: center; padding: 1rem;">&copy; 2026 Efrem Esayas. All Rights Reserved.</p>
+        <p style="text-align: center; padding: 1rem; color: #666;">&copy; 2026 Efrem Esayas. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills | Efrem Esayas</title>
+    <title>Contact | Efrem Esayas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,28 +19,52 @@
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="skills.html" class="active">Skills</a>
+            <a href="skills.html">Skills</a>
             <a href="education.html">Education</a>
             <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
 
-    <section class="section skills" style="padding: 100px 9%; min-height: 80vh;">
-        <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center;">My <span>Skills</span></h2>
-        <div class="skills-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-            <div class="skill-box" style="background: #f9f9f9; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-                <h3>Web Development</h3>
-                <p>HTML5, CSS3, JavaScript, PHP, Laravel Framework</p>
+    <section class="section contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="contact-container">
+            
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>efremesayas394@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Wolaita Sodo, Ethiopia</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-share-alt"></i>
+                    <div>
+                        <h3>Social Profiles</h3>
+                        <p>Facebook | Telegram | TikTok | Instagram</p>
+                    </div>
+                </div>
             </div>
-            <div class="skill-box" style="background: #f9f9f9; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-                <h3>Database Management</h3>
-                <p>MySQL, phpMyAdmin, Database Design & Query Optimization</p>
-            </div>
-            <div class="skill-box" style="background: #f9f9f9; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-                <h3>Programming & Graphics</h3>
-                <p>C++, Python, Arduino, Photoshop, PixelLab, UI/UX Design</p>
-            </div>
+
+            <form id="contact-form" class="contact-form" action="#" method="POST">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+                <div id="form-response"></div>
+            </form>
+
         </div>
     </section>
 

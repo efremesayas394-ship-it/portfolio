@@ -527,7 +527,7 @@ footer {
     }
 
     #check:checked ~ .navbar {
-        max-height: 400px;
+        max-height: 500px; /* Increased height to fit all links including Contact */
         padding: 1.5rem 2rem;
     }
 

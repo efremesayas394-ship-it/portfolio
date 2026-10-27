@@ -28,13 +28,13 @@ body {
 }
 
 /* Header & Navigation */
-.navbar {
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1.5rem 9%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
     display: flex;
     justify-content: space-between;
@@ -52,30 +52,40 @@ body {
 }
 .logo span { color: var(--main-color); text-shadow: 0 0 10px var(--glow-color); }
 
-.nav-links {
+.navbar {
     display: flex;
     list-style: none;
     gap: 1.8rem;
+    align-items: center;
 }
 
-.nav-links a {
+.navbar a {
     font-size: 0.95rem;
     color: var(--muted-text);
     transition: 0.3s ease;
     font-weight: 500;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.navbar a:hover,
+.navbar a.active {
     color: var(--main-color);
     text-shadow: 0 0 10px var(--glow-color);
 }
 
-.hamburger {
+/* Checkbox and Icons for Mobile Menu Toggle */
+#check {
+    display: none;
+}
+
+.icons {
     display: none;
     font-size: 1.8rem;
     cursor: pointer;
     color: var(--main-color);
+}
+
+.icons #close-icon {
+    display: none;
 }
 
 /* Sections */
@@ -315,7 +325,7 @@ body {
 
 .skill-card i { color: var(--main-color); font-size: 1.5rem; }
 
-/* Portfolio / Image Gallery (Fixed with object-fit: contain to avoid cropping) */
+/* Portfolio / Image Gallery */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -350,7 +360,7 @@ body {
 .portfolio-img-box img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Prevents image cutting/cropping */
+    object-fit: contain;
     transition: 0.5s ease;
 }
 
@@ -489,22 +499,55 @@ footer {
     color: var(--muted-text);
 }
 
-/* Responsive */
+/* Responsive Design for Mobile Devices (Hamburger Menu Activation) */
 @media (max-width: 768px) {
-    .hamburger { display: block; }
-    .nav-links {
+    .header {
+        padding: 1.2rem 5%;
+    }
+
+    .icons {
+        display: block;
+    }
+
+    /* Navbar hidden by default on mobile, drops down when checked */
+    .navbar {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background: var(--bg-color);
         flex-direction: column;
-        padding: 2rem;
-        display: none;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
         border-bottom: 1px solid var(--border-color);
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+        padding: 0 2rem;
     }
-    .nav-links.active { display: flex; }
+
+    #check:checked ~ .navbar {
+        max-height: 400px;
+        padding: 1.5rem 2rem;
+    }
+
+    /* Toggle hamburger and close icons */
+    #check:checked ~ .icons #menu-icon {
+        display: none;
+    }
+
+    #check:checked ~ .icons #close-icon {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 0.8rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
     .home, .about-container { flex-direction: column; text-align: center; }
     .input-group { grid-template-columns: 1fr; }
     .timeline::after { left: 31px; }
